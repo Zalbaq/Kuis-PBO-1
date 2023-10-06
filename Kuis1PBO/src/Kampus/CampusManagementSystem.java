@@ -87,7 +87,8 @@ public class CampusManagementSystem {
         }
     }
 
-    static void addLecturerAssignment(List<Lecturer> lecturer, List<Course> courses, List<LecturerAssignment> LecturerAssignments) {
+    static void addLecturerAssignment(List<Lecturer> lecturer, List<Course> courses,
+            List<LecturerAssignment> LecturerAssignments) {
         System.out.print("Pilih Dosen (ID): ");
         String lecturerIdForAssignment = scanner.nextLine();
         System.out.print("Pilih Mata Kuliah (ID): ");
@@ -96,7 +97,7 @@ public class CampusManagementSystem {
         // Cari dosen berdasarkan ID
         Lecturer selectedLecturerForAssignment = null;
         for (Lecturer l : lecturer) {
-            if (l.getEmployeeId().equals(lecturerIdForAssignment)) {
+            if (l.getLectureId().equals(lecturerIdForAssignment)) {
                 selectedLecturerForAssignment = l;
                 break;
             }
@@ -203,9 +204,8 @@ public class CampusManagementSystem {
         System.out.println("Admin berhasil ditambahkan!");
     }
 
-
-//===================================================================================================
-//===================================================================================================
+    // ===================================================================================================
+    // ===================================================================================================
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
