@@ -3,16 +3,17 @@ package Kampus;
 public class Admin extends Person {
     private String idAdmin;
 
+    
     public Admin(String name, int age, String idAdmin) {
         super(name, age);
         this.idAdmin = idAdmin;
     }
 
-    public String getEmployeeId() {
+    public String getAdminId() {
         return idAdmin;
     }
 
-    public void setEmployeeId(String idAdmin) {
+    public void setAdminId(String idAdmin) {
         if (idAdmin.length() == 5) {
             this.idAdmin = idAdmin;
         } else {
