@@ -1,29 +1,29 @@
 package Kampus;
 
 public class OB extends Person {
-    private String employeeId;
+    private String obId;
 
-    public OB(String name, int age, String employeeId) {
+    public OB(String name, int age, String obId) {
         super(name, age);
-        this.employeeId = employeeId;
+        this.obId = obId;
     }
 
-    public String getEmployeeId() {
-        return employeeId;
+    public String getObId() {
+        return obId;
     }
 
-    public void setEmployeeId(String employeeId) {
-        if (employeeId.length() == 5) {
-            this.employeeId = employeeId;
+    public void setObId(String obId) {
+        if (obId.length() == 5) {
+            this.obId = obId;
         } else {
-            System.out.println("Employee ID must be 5 characters long");
+            System.out.println("Ob ID must be 5 characters long");
         }
     }
 
     @Override
     public void displayInfo() {
         super.displayInfo();
-        System.out.println("Employee ID: " + employeeId);
+        System.out.println("OB ID: " + obId);
         System.out.println("---------------------------------");
     }
 }
