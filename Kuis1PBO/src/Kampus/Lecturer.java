@@ -1,24 +1,24 @@
 package Kampus;
 
 class Lecturer extends Person {
-    private String employeeId;
+    private String lecturerId;
 
-    public Lecturer(String name, int age, String employeeId) {
+    public Lecturer(String name, int age, String lecturerId) {
         super(name, age);
-        this.employeeId = employeeId;
+        this.lecturerId = lecturerId;
     }
 
-    public String getEmployeeId() {
-        return employeeId;
+    public String getLectureId() {
+        return lecturerId;
     }
 
-    public void setEmployeeId(String employeeId) {
-        this.employeeId = employeeId;
+    public void setLectureId(String lecturerId) {
+        this.lecturerId = lecturerId;
     }
 
     @Override
     public void displayInfo() {
         super.displayInfo();
-        System.out.println("Employee ID: " + employeeId);
+        System.out.println("Lecture ID: " + lecturerId);
     }
 }
